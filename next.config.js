@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+require("dotenv").config();
 
-module.exports = nextConfig
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// };
+
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    domains: ["openweathermap.org"],
+  },
+};

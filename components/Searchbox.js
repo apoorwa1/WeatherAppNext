@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import cities from "../lib/city.list.json";
 import Link from "next/link";
 
-const Searchbox = () => {
+const Searchbox = ({ placeholder }) => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
 
@@ -31,7 +31,12 @@ const Searchbox = () => {
   };
   return (
     <div className="search">
-      <input type="text" value={query} onChange={onChange} />
+      <input
+        type="text"
+        value={query}
+        onChange={onChange}
+        placeholder={placeholder ? placeholder : ""}
+      />
       {query.length > 3 && (
         <ul>
           {results.length > 0 ? (

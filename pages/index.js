@@ -9,6 +9,7 @@ export default function Home() {
       </Head>
       <div className="home">
         <div className="container">
+          <h1>WeatherToday</h1>
           <Searchbox />
         </div>
       </div>

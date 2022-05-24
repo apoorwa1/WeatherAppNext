@@ -15,6 +15,7 @@ body {
   font-family: "Nunito", sans-serif;
   color: $dark;
   margin: 0;
+  background-image: url("/weather.jpg");
 }
 
 * {
@@ -24,9 +25,11 @@ body {
 .container {
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  margin:  0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
 }
 
@@ -40,7 +43,7 @@ h6 {
 }
 
 .page-wrapper {
-  margin: 50px 0;
+  margin: 100px 0;
 
   .back-link {
     display: inline-block;
@@ -315,7 +318,7 @@ h6 {
 
 .home {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;

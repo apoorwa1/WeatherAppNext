@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Searchbox from "../components/Searchbox";
+import FavouritePlaces from "../components/FavouritePlaces";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <div className="container">
           <h1>WeatherToday</h1>
           <Searchbox />
+          <FavouritePlaces />
         </div>
       </div>
     </div>
